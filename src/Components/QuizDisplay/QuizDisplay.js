@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card/Card';
 import Controls from './Controls/Controls';
+import './QuizDisplay.css';
 
 class QuizDisplay extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class QuizDisplay extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='card-container'>
         <Card
           kana={this.state.kana}
           romaji={this.state.romaji}

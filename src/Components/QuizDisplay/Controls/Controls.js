@@ -1,5 +1,6 @@
 import React from 'react';
 import Kantroller from './Kantroller.js';
+import './Controls.css';
 
 class Controls extends React.Component {
   constructor(props) {
@@ -58,14 +59,14 @@ class Controls extends React.Component {
     return (
       <div>
         <div>
-          <button onClick={this.prev}>PREV</button>
-          <button onClick={this.next}>NEXT</button>
+          <button className='half-button-left' onClick={this.prev}>PREV</button>
+          <button className='half-button-right' onClick={this.next}>NEXT</button>
         </div>
         <div>
-          <button onClick={this.onHiragana}>Hiragana</button>
-          <button onClick={this.onKatakana}>Katakana</button>
+          <button className='half-button-left' onClick={this.onHiragana}>Hiragana</button>
+          <button className='half-button-right' onClick={this.onKatakana}>Katakana</button>
         </div>
-        <button onClick={this.shuffle}>SHUFFLE</button>
+        <button className='full-button' onClick={this.shuffle}>SHUFFLE</button>
       </div>
     );
   }

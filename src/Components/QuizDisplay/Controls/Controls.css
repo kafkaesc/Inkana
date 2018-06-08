@@ -1,0 +1,27 @@
+button {
+  border-width: 0px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.full-button {
+  background-color: #0cf;
+  width: 100%;
+}
+
+.half-button-left {
+  background-color: #0cf;
+  width: 49%;
+  margin-bottom: .3em;
+  margin-right: .1em;
+  float: left;
+}
+
+.half-button-right {
+  background-color: #0cf;
+  width: 49%;
+  margin-bottom: .3em;
+  margin-left: .1em;
+  float: right;
+}
