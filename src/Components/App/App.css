@@ -3,8 +3,20 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 200px;
+  margin-bottom: 1em;
+}
+
+.App-logo:hover, .App-logo:active, .App-logo:focus {
+  animation-name: App-logo-invert;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+}
+
+@keyframes App-logo-invert {
+  0%   { transform: rotate(  0deg); }
+  50%  { transform: rotate(180deg); }
+  100% { transform: rotate(  0deg); }
 }
 
 .App-header {
@@ -29,13 +41,4 @@ h1, h2, h3, h4, h5, h6, p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

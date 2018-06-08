@@ -4,12 +4,31 @@ import Quiz from '../QuizDisplay/QuizDisplay';
 import './App.css';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { AppName: 'Inkana' };
+    this.inEnglish = this.inEnglish.bind(this);
+    this.inKana = this.inKana.bind(this);
+  }
+
+  inEnglish(e) {
+    this.setState({ AppName: 'Inkana'});
+  }
+
+  inKana(e) {
+    this.setState({ AppName: 'インカナ' });
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Inkana</h1>
+          <h1 className="App-title"
+            onMouseOver={this.inKana}
+            onMouseLeave={this.inEnglish} >
+            {this.state.AppName}
+          </h1>
         </header>
         <Quiz />
       </div>
