@@ -1,3 +1,9 @@
+/* This js file is a helper file for the Controls component
+ * It returns the proper kana and romaji for Controller to display.
+ * It also manages shuffling the characters and toggling between
+ * hiragana and katakana.
+ */
+
 const hiragana =
   [ 'あ', 'い', 'う', 'え', 'お', 'か', 'が', 'き', 'ぎ', 'く', 'ぐ',
     'け', 'げ', 'こ', 'ご', 'さ', 'ざ', 'し', 'じ', 'す', 'ず', 'せ',
@@ -62,10 +68,15 @@ const Kantroller = {
       currentKana = hiragana.length - 1;
   },
 
+  // returns a random number in range [0, hiragana size)
   random() {
     return Math.floor(Math.random() * Math.floor(hiragana.length));
   },
 
+  // visits each kana index and swaps that kana with a different
+  // random spot, it is important to swap hiragana, katakana, and
+  // romaji all between the same two indices otherwise everything
+  // becomes bungled
   shuffle() {
     for(let i = 0; i < hiragana.length; i++) {
       let currHiragana = hiragana[i];
@@ -82,4 +93,4 @@ const Kantroller = {
   }
 };
 
-export default Kantroller
+export default Kantroller;

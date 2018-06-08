@@ -11,10 +11,12 @@ class App extends React.Component {
     this.inKana = this.inKana.bind(this);
   }
 
+  // used to set the pages title unti english
   inEnglish(e) {
     this.setState({ AppName: 'Inkana'});
   }
 
+  // *groan*
   inKana(e) {
     this.setState({ AppName: 'インカナ' });
   }

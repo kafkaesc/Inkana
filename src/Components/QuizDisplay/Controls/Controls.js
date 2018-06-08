@@ -44,7 +44,7 @@ class Controls extends React.Component {
     }
   }
 
-  // TO-DO: write a shuffle method
+  // shuffles all the kana and updates state
   shuffle() {
     Kantroller.shuffle();
     this.sendCardData();

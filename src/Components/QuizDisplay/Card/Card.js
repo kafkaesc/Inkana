@@ -7,8 +7,11 @@ class Card extends React.Component {
     this.handleFlip = this.handleFlip.bind(this);
   }
 
+  // it is somewhat odd that the card class handles
+  // revealing the solution instead of the control class,
+  // but i think the skeuomorphic idea of 'flipping' a
+  // flashcard is worth it
   handleFlip() {
-    console.log(`flipping`);
     this.props.flip();
   }
 
