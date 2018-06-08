@@ -1,0 +1,29 @@
+.card {
+  border: solid 2px black;
+  display: inline-block;
+  height: 400px;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+.kan-text {
+  font-size: 192px;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.romaji {
+  font-size: 48px;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
