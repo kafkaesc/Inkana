@@ -60,6 +60,25 @@ const Kantroller = {
     currentKana = currentKana - 1;
     if(currentKana < 0)
       currentKana = hiragana.length - 1;
+  },
+
+  random() {
+    return Math.floor(Math.random() * Math.floor(hiragana.length));
+  },
+
+  shuffle() {
+    for(let i = 0; i < hiragana.length; i++) {
+      let currHiragana = hiragana[i];
+      let currKatakana = katakana[i];
+      let currRomaji = romaji[i];
+      const shuffleIndex = this.random();
+      hiragana[i] = hiragana[shuffleIndex];
+      katakana[i] = katakana[shuffleIndex];
+      romaji[i] = romaji[shuffleIndex];
+      hiragana[shuffleIndex] = currHiragana;
+      katakana[shuffleIndex] = currKatakana;
+      romaji[shuffleIndex] = currRomaji;
+    }
   }
 };
 

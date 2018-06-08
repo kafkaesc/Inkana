@@ -13,7 +13,6 @@ class QuizDisplay extends React.Component {
 
   flip() {
     this.setState({ isRevealed: !this.state.isRevealed });
-    console.log(`new state is ${this.state.isRevealed}`);
   }
 
   updateCard(newKana, newRomaji) {

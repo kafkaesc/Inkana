@@ -8,6 +8,7 @@ class Controls extends React.Component {
       this.prev = this.prev.bind(this);
       this.onHiragana = this.onHiragana.bind(this);
       this.onKatakana = this.onKatakana.bind(this);
+      this.shuffle = this.shuffle.bind(this);
   }
 
   // moves to the next kana and updates the card
@@ -43,6 +44,10 @@ class Controls extends React.Component {
   }
 
   // TO-DO: write a shuffle method
+  shuffle() {
+    Kantroller.shuffle();
+    this.sendCardData();
+  }
 
   // updates the card data for the QuizDisplay class
   sendCardData() {
@@ -60,7 +65,7 @@ class Controls extends React.Component {
           <button onClick={this.onHiragana}>Hiragana</button>
           <button onClick={this.onKatakana}>Katakana</button>
         </div>
-        <button>SHUFFLE</button>
+        <button onClick={this.shuffle}>SHUFFLE</button>
       </div>
     );
   }
