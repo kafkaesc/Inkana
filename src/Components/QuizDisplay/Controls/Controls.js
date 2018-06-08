@@ -59,14 +59,14 @@ class Controls extends React.Component {
     return (
       <div>
         <div>
-          <button className='half-button-left' onClick={this.prev}>PREV</button>
-          <button className='half-button-right' onClick={this.next}>NEXT</button>
+          <button className='half-button-left' onClick={this.prev}>Pervious</button>
+          <button className='half-button-right' onClick={this.next}>Next</button>
         </div>
         <div>
           <button className='half-button-left' onClick={this.onHiragana}>Hiragana</button>
           <button className='half-button-right' onClick={this.onKatakana}>Katakana</button>
         </div>
-        <button className='full-button' onClick={this.shuffle}>SHUFFLE</button>
+        <button className='full-button' onClick={this.shuffle}>Shuffle</button>
       </div>
     );
   }
