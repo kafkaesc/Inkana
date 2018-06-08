@@ -5,12 +5,11 @@
 .App-logo {
   height: 200px;
   margin-bottom: 1em;
+  transition: transform 2s;
 }
 
-.App-logo:hover, .App-logo:active, .App-logo:focus {
-  animation-name: App-logo-invert;
-  animation-duration: 4s;
-  animation-timing-function: ease;
+.App-logo:hover {
+  transform: rotate(180deg);
 }
 
 @keyframes App-logo-invert {
