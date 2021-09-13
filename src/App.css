@@ -1,0 +1,16 @@
+.in-header {
+    background-color: #0cf;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.in-header h1 {
+    color: #fff;
+    margin: 4px;
+}
+
+.kay-logo {
+    max-width: 100%;  
+    width: 200px;
+}
