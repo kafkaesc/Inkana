@@ -1,7 +1,9 @@
 import './App.css';
+import kantroller from './services/kantroller.service';
 import kayLogo from './assets/images/kay-logo.png';
 
 function App() {
+    kantroller.load();
     return (
         <div className="App">
             <div className="in-header">
